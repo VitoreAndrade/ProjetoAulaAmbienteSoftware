@@ -1,6 +1,7 @@
 package br.com.vitor;
 
 import br.com.vitor.model.Aluno;
+import br.com.vitor.model.Disciplinas;
 
 
 public class Main {
@@ -15,5 +16,8 @@ public class Main {
         aluno2.adicionarNota(9.0);
         aluno2.adicionarNota(8.0);
 
+        Disciplinas matematica = new Disciplinas("Matemática",professorMatematica);
+        matematica.adicionarAluno(aluno1);
+        matematica.adicionarAluno(aluno2);
     }
 }
